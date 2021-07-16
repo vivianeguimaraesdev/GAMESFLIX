@@ -1,3 +1,66 @@
+/*Variáveis no CSS3*/
+:root{
+    --azul: #0096c7;
+    --preto:#141414;
+}
+
+
+/*Zerando as configurações do documento*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elmentos Base*/
 body{
-    background-color: rgba(32, 31, 31, 0.89);
+    background:var(--preto);
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.container{
+    display: flex; /*alinha em linha*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: var(--azul);
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a::hover{
+    color:#fff;
+}
+
+/*Jogo Principal*/
+
+.jogo-principal{
+    font-size: 16px;
+    background:url('/PROJETO/img/main.jpg');
+    height: 750px;
+    background-size: cover;
+
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+
+.botao{
+    margin-top: 100px;
+}
+
+.titulo{
+    font-size: 40px;
 }
